@@ -19,9 +19,9 @@ inputPx.addEventListener('click', () => {
     inputEm.value = null;
 })
 // 
-inputPx2.addEventListener('input', () => {
-    result = parseFloat(inputPx2.value / 16).toFixed(2);
-    inputEm2.value = result;
+inputEm2.addEventListener('input', () => {
+    result = parseFloat(inputEm2.value * 16);
+    inputPx2.value = result;
     // console.log(result);
 });
 // inputPx.addEventListener('change', () => {
